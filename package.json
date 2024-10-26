@@ -2,20 +2,12 @@
   "name": "soniyaprasad77",
   "version": "1.0.0",
   "description": "this is my personal portfolio",
-  "source": "src/index.html",
   "scripts": {
     "start": "parcel",
     "build": "parcel build"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/soniyaprasad77/soniyaprasad77.github.io.git"
-  },
-  "author": "Microsoft",
+  "author": "Soniya Prasad",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/soniyaprasad77/soniyaprasad77.github.io.git/issues"
-  },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
