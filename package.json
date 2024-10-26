@@ -2,6 +2,7 @@
   "name": "soniyaprasad77",
   "version": "1.0.0",
   "description": "this is my personal portfolio",
+  "source": "src/index.html",
   "scripts": {
     "start": "parcel",
     "build": "parcel build"
