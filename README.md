@@ -1,2 +1,0 @@
-# Soniya Prasad's Portfolio
-
