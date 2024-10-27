@@ -146,7 +146,7 @@ const about = {
       {
         name: "Mahatma Gandhi Central University",
         description: <>Studied computer science and engineering.</>,
-        timeframe: "2020 - 2024",
+        timeframe: "Nov 2020 - Aug 2024",
       },
     ],
   },

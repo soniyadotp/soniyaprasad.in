@@ -2,15 +2,15 @@ import { InlineCode } from "@/once-ui/components";
 
 const createI18nContent = (t) => {
     const person = {
-        firstName: 'Selene',
-        lastName:  'Yu',
+        firstName: 'Soniya',
+        lastName:  'Prasad',
         get name() {
             return `${this.firstName} ${this.lastName}`;
         },
         role:      t("person.role"),
         avatar:    '/images/avatar.jpg',
-        location:  'Asia/Jakarta',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-        languages: ['English', 'Bahasa']  // optional: Leave the array empty if you don't want to display languages
+        location:  'Asia/Kolkata',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+        languages: ['English', 'Hindi']  // optional: Leave the array empty if you don't want to display languages
     }
 
     const newsletter = {
@@ -25,22 +25,22 @@ const createI18nContent = (t) => {
         {
             name: 'GitHub',
             icon: 'github',
-            link: 'https://github.com/once-ui-system/nextjs-starter',
+            link: 'https://github.com/soniyaprasad77',
         },
         {
             name: 'LinkedIn',
             icon: 'linkedin',
-            link: 'https://www.linkedin.com/company/once-ui/',
+            link: 'https://www.linkedin.com/in/soniyaprasad77/',
         },
         {
-            name: 'X',
-            icon: 'x',
-            link: '',
+            name: 'LeetCode',
+            icon: 'leetcode',
+            link: 'https://leetcode.com/u/soniyaprasad77/',
         },
         {
             name: 'Email',
             icon: 'email',
-            link: 'mailto:example@gmail.com',
+            link: 'mailto:soniyadotprasad@gmail.com',
         },
     ]
 
@@ -77,11 +77,11 @@ const createI18nContent = (t) => {
             title: t("about.work.title"),
             experiences: [
                 {
-                    company: 'FLY',
-                    timeframe: t("about.work.experiences.FLY.timeframe"),
-                    role: t("about.work.experiences.FLY.role"),
-                    achievements: t("about.work.experiences.FLY.achievements").split(";"),
-                    images: [ // optional: leave the array empty if you don't want to display images
+                    company: 'Travander',
+                    timeframe: t("about.work.experiences.Travander.timeframe"),
+                    role: t("about.work.experiences.Travander.role"),
+                    achievements: t("about.work.experiences.Travander.achievements").split(";"),
+                    images: [ 
                         {
                             src: '/images/projects/project-01/cover-01.jpg',
                             alt: 'Once UI Project',
@@ -91,10 +91,10 @@ const createI18nContent = (t) => {
                     ]
                 },
                 {
-                    company: 'Creativ3',
-                    timeframe: t("about.work.experiences.Creativ3.timeframe"),
-                    role: t("about.work.experiences.Creativ3.role"),
-                    achievements: t("about.work.experiences.Creativ3.achievements").split(";"),
+                    company: 'Tublian',
+                    timeframe: t("about.work.experiences.Tublian.timeframe"),
+                    role: t("about.work.experiences.Tublian.role"),
+                    achievements: t("about.work.experiences.Tublian.achievements").split(";"),
                     images: [ ]
                 }
             ]
@@ -104,12 +104,9 @@ const createI18nContent = (t) => {
             title: 'Studies',
             institutions: [
                 {
-                    name: 'University of Jakarta',
-                    description: <>{t(`about.studies.institutions.University of Jakarta.description`)}</>,
-                },
-                {
-                    name: 'Build the Future',
-                    description: <>{t("about.studies.institutions.Build the Future.description")}</>,
+                    name: 'Mahatma Gandhi Central University',
+                    description: <>{t(`about.studies.institutions.Mahatma Gandhi Central University.description`)}</>,
+                    timeframe: <>{t(`Nov 2020 Aug 2024`)}</>
                 }
             ]
         },
@@ -118,8 +115,8 @@ const createI18nContent = (t) => {
             title: t("about.technical.title"),
             skills: [
                 {
-                    title: 'Figma',
-                    description: <>{t("about.technical.skills.Figma.description")}</>,
+                    title: 'Frontend',
+                    description: <>{t("about.technical.skills.Frontend.description")}</>,
                     images: [
                         {
                             src: '/images/projects/project-01/cover-02.jpg',
@@ -136,11 +133,17 @@ const createI18nContent = (t) => {
                     ]
                 },
                 {
-                    title: 'Next.js',
-                    description: <>{t("about.technical.skills.Nextjs.description")}</>, // "." not accepted in next-intl namespace
+                    title: 'Backend',
+                    description: <>{t("about.technical.skills.Backend.description")}</>,
                     images: [
                         {
-                            src: '/images/projects/project-01/cover-04.jpg',
+                            src: '/images/projects/project-01/cover-02.jpg',
+                            alt: 'Project image',
+                            width: 16,
+                            height: 9
+                        },
+                        {
+                            src: '/images/projects/project-01/cover-03.jpg',
                             alt: 'Project image',
                             width: 16,
                             height: 9
@@ -155,23 +158,18 @@ const createI18nContent = (t) => {
         label: t("blog.label"),
         title: t("blog.title"),
         description: t("blog.description", {name: person.name})
-        // Create new blog posts by adding a new .mdx file to app/blog/posts
-        // All posts will be listed on the /blog route
     }
 
     const work = {
         label: t("work.label"),
         title: t("work.title"),
         description: t("work.description", {name: person.name})
-        // Create new project pages by adding a new .mdx file to app/blog/posts
-        // All projects will be listed on the /home and /work routes
     }
 
     const gallery = {
         label: t("gallery.label"),
         title: t("gallery.title"),
         description: t("gallery.description", {name: person.name}),
-        // Images from https://pexels.com
         images: [
             {
                 src: '/images/gallery/img-01.jpg',
