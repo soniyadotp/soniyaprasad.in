@@ -1,0 +1,80 @@
+{
+  "person": {
+    "role": "Software Developer Engineer"
+  },
+  "newsletter": {
+    "title": "Subscribe to {firstName}'s Newsletter",
+    "description": "I occasionally write about design, technology, and share thoughts on the intersection of creativity and engineering",
+    "button": "Sign up"
+  },
+  "home": {
+    "label": "Home",
+    "title": "{name}'s Portfolio",
+    "description": "Portfolio website showcasing my work as a {role}",
+    "headline": "Software Developer engineer",
+    "subline": "I'm Selene, a design engineer at FLY, where I craft intuitive user experiences. After hours, I build my own projects."
+  },
+  "about": {
+    "label": "About",
+    "title": "About me",
+    "description": "Meet {name}, {role} from {location}",
+    "intro": {
+      "title": "Introduction",
+      "description": " Soniya Prasad is a recent graduate in Computer Science and Engineering with hands-on experience in end-to-end software development. Skilled in React and Next.js, she is passionate about building efficient and scalable web applications. Soniya is continuously exploring innovative solutions to deliver optimal user experiences."
+    },
+
+    "work": {
+      "title": "Work Experience",
+      "experiences": {
+        "Travander": {
+          "timeframe": "June 2024 - Aug 2024",
+          "role": "Frontend Engineer",
+          "achievements": "Managed state for the traveler module with Context API, overseeing data flows across 40+ components and integrating REST APIs.; Implemented form validation with React Hook Form & Zod, optimized infinite scroll for trips and bookings (improving load times by 25%), and integrated secure payment processing with Razorpay for 100+ daily transactions."
+        },
+        "Tublian": {
+          "timeframe": "March 2024 - May 2024",
+          "role": "Software Engineer Intern",
+          "achievements": "Developed an AI ChatBot for personalized tutoring, enhancing engagement by 40%.; Contributed to Tublian’s 8020 roadmap generator, boosting performance by 10%."
+        }
+      }
+    },
+
+    "studies": {
+      "title": "Studies",
+      "institutions": {
+        "Mahatma Gandhi Central University": {
+          "description": "Studied computer science and engineering."
+        }
+      }
+    },
+    "technical": {
+      "title": "Technical skills",
+      "skills": {
+        "Frontend": {
+          "description": "Able to prototype in Figma with Once UI with unnatural speed."
+        },
+        "Backend": {
+          "description": "Building next gen apps with Next.js + Once UI + Supabase."
+        }
+      }
+    }
+  },
+  "blog": {
+    "label": "Blog",
+    "title": "Writing about design and tech...",
+    "description": "Read what {name} has been up to recently"
+  },
+  "work": {
+    "label": "Work",
+    "title": "My projects",
+    "description": "Design and dev projects by {name}"
+  },
+  "gallery": {
+    "label": "Gallery",
+    "title": "My photo gallery",
+    "description": "A photo collection by {name}"
+  },
+  "projectCard": {
+    "label": "Read Case Study"
+  }
+}
