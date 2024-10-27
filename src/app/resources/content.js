@@ -27,6 +27,11 @@ const social = [
   // Links are automatically displayed.
   // Import new icons in /once-ui/icons.ts
   {
+    name: "X",
+    icon: "x",
+    link: "https://www.x.com/soniyadotprasad",
+  },
+  {
     name: "GitHub",
     icon: "github",
     link: "https://github.com/soniyaprasad77",
@@ -36,11 +41,7 @@ const social = [
     icon: "linkedin",
     link: "https://www.linkedin.com/in/soniyaprasad",
   },
-  {
-    name: "X",
-    icon: "x",
-    link: "",
-  },
+
   {
     name: "Email",
     icon: "email",
@@ -111,15 +112,7 @@ const about = {
             100+ daily transactions.
           </>,
         ],
-        images: [
-          // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
-        ],
+        images: [],
       },
       {
         company: "Tublian",
@@ -127,8 +120,9 @@ const about = {
         role: "Software Engineer Intern",
         achievements: [
           <>
-            Developed an AI ChatBot for personalized tutoring, enhancing
-            engagement by 40%.
+            Built an AI ChatBot that provided personalized tutoring, answering
+            over 10,000+ questions enhancing user learning experiences and
+            increasing engagement by 40%.
           </>,
           <>
             Collaborated with the team Contributed to develop Tublian’s 8020
@@ -147,6 +141,7 @@ const about = {
         name: "Mahatma Gandhi Central University",
         description: <>Studied computer science and engineering.</>,
         timeframe: "Nov 2020 - Aug 2024",
+        cgpa: "cgpa: 8.82",
       },
     ],
   },
@@ -155,52 +150,36 @@ const about = {
     title: "Technical skills",
     skills: [
       {
-        title: "Frontend",
-        description: (
-          <>Able to prototype in Figma with Once UI with unnatural speed.</>
-        ),
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        title: "Primary",
+        description: <>HTML, CSS, JavaScript, React, Next.js, Node.js</>,
+        images: [],
       },
       {
-        title: "Backend",
+        title: "Secondary",
         description: (
-          <>Building next gen apps with Next.js + Once UI + Supabase.</>
+          <>Redux toolkit, GraphQL, Git, Jest, MongoDB, SQL, Tailwind</>
         ),
-        images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        images: [],
       },
-    //   {
-    //     title: "Data Structures and Algorithms",
-    //     description: (
-    //       <>Able to prototype in Figma with Once UI with unnatural speed.</>
-    //     ),
-    //   },
+      {
+        title: "Other",
+        description: (
+          <>
+            Core Java (Java 8/9, Multithreading), CI/CD, Cloud (AWS/Azure/GCP),
+            Microservices (REST API, SOAP, Event & Message-Based), CI/CD, Cloud
+            (AWS, Azure, GCP), Docker, Containerization, SOLID Principles,
+            Caching (Redis), Monitoring (Grafana)
+          </>
+        ),
+        images: [],
+      },
     ],
   },
 };
 
 const blog = {
   label: "Blog",
-  title: "Writing about design and tech...",
+  title: "Writing about tech...",
   description: `Read what ${person.name} has been up to recently`,
   // Create new blog posts by adding a new .mdx file to app/blog/posts
   // All posts will be listed on the /blog route

@@ -347,12 +347,26 @@ export default function About({
                         {institution.timeframe}
                       </Text>
                     </Flex>
-                    <Text
-                      variant="heading-default-xs"
-                      onBackground="neutral-weak"
+                    <Flex
+                      key={`${institution.name}-${index}`}
+                      fillWidth
+                      justifyContent="space-between"
+                      alignItems="flex-end"
+                      marginBottom="4"
                     >
-                      {institution.description}
-                    </Text>
+                      <Text
+                        variant="heading-default-xs"
+                        onBackground="neutral-weak"
+                      >
+                        {institution.description}
+                      </Text>
+                      <Text
+                        variant="heading-default-xs"
+                        onBackground="neutral-weak"
+                      >
+                        {institution.cgpa}
+                      </Text>
+                    </Flex>
                   </Flex>
                 ))}
               </Flex>
