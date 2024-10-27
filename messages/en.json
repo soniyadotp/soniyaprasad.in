@@ -43,18 +43,23 @@
       "title": "Studies",
       "institutions": {
         "Mahatma Gandhi Central University": {
-          "description": "Studied computer science and engineering."
+          "description": "Studied computer science and engineering.",
+          "timeframe": "Nov 2020 - Aug 2024",
+          "cgpa": "cgpa: 8.5"
         }
       }
     },
     "technical": {
       "title": "Technical skills",
       "skills": {
-        "Frontend": {
-          "description": "Able to prototype in Figma with Once UI with unnatural speed."
+        "Primary": {
+          "description": "HTML, CSS, JavaScript, React, Next.js, Node.js"
         },
-        "Backend": {
-          "description": "Building next gen apps with Next.js + Once UI + Supabase."
+        "Secondary": {
+          "description": "Redux toolkit, GraphQL, Git, Jest, MongoDB, SQL, Tailwind"
+        },
+        "Others": {
+          "description": "Core Java (Java 8/9, Multithreading), CI/CD, Cloud (AWS/Azure/GCP), Microservices (REST API, SOAP, Event & Message-Based), CI/CD, Cloud (AWS, Azure, GCP), Docker, Containerization, SOLID Principles, Caching (Redis), Monitoring (Grafana)"
         }
       }
     }

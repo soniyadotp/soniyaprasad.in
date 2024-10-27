@@ -120,8 +120,8 @@ const createI18nContent = (t) => {
               )}
             </>
           ),
-          timeframe: <>{t(`Nov 2020 Aug 2024`)}</>,
-          cgpa: <>{t(`cgpa: 8.82`)}</>,
+          timeframe: <>{t(`about.studies.institutions.Mahatma Gandhi Central University.timeframe`)}</>,
+          cgpa: <>{t(`about.studies.institutions.Mahatma Gandhi Central University.cgpa`)}</>,
         },
       ],
     },
@@ -130,39 +130,39 @@ const createI18nContent = (t) => {
       title: t("about.technical.title"),
       skills: [
         {
-          title: "Frontend",
-          description: <>{t("about.technical.skills.Frontend.description")}</>,
+          title: "Primary",
+          description: <>{t("about.technical.skills.Primary.description")}</>,
           images: [
-            {
-              src: "/images/projects/project-01/cover-02.jpg",
-              alt: "Project image",
-              width: 16,
-              height: 9,
-            },
-            {
-              src: "/images/projects/project-01/cover-03.jpg",
-              alt: "Project image",
-              width: 16,
-              height: 9,
-            },
+            // {
+            //   src: "/images/projects/project-01/cover-02.jpg",
+            //   alt: "Project image",
+            //   width: 16,
+            //   height: 9,
+            // },
+            // {
+            //   src: "/images/projects/project-01/cover-03.jpg",
+            //   alt: "Project image",
+            //   width: 16,
+            //   height: 9,
+            // },
           ],
         },
         {
-          title: "Backend",
-          description: <>{t("about.technical.skills.Backend.description")}</>,
+          title: "Secondary",
+          description: <>{t("about.technical.skills.Secondary.description")}</>,
           images: [
-            {
-              src: "/images/projects/project-01/cover-02.jpg",
-              alt: "Project image",
-              width: 16,
-              height: 9,
-            },
-            {
-              src: "/images/projects/project-01/cover-03.jpg",
-              alt: "Project image",
-              width: 16,
-              height: 9,
-            },
+            // {
+            //   src: "/images/projects/project-01/cover-02.jpg",
+            //   alt: "Project image",
+            //   width: 16,
+            //   height: 9,
+            // },
+            // {
+            //   src: "/images/projects/project-01/cover-03.jpg",
+            //   alt: "Project image",
+            //   width: 16,
+            //   height: 9,
+            // },
           ],
         },
       ],
