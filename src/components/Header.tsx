@@ -76,10 +76,11 @@ export const Header = () => {
             as="header"
             zIndex={9}
             fillWidth padding="8"
-            justifyContent="center">
+            justifyContent="space-between"
+            >
             <Flex
                 hide="s"
-                paddingLeft="12" fillWidth
+                paddingLeft="12" 
                 alignItems="center"
                 textVariant="body-default-s">
                 { display.location && (
@@ -158,7 +159,7 @@ export const Header = () => {
                 }
                 <Flex hide="s">
                     { display.time && (
-                        <TimeDisplay timeZone={person.location}/>
+                        <TimeDisplay timeZone={"Asia/Kolkata"}/>
                     )}
                 </Flex>
             </Flex>

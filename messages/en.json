@@ -20,7 +20,7 @@
     "description": "Meet {name}, {role} from {location}",
     "intro": {
       "title": "Introduction",
-      "description": " Soniya Prasad is a recent graduate in Computer Science and Engineering with hands-on experience in end-to-end software development. Skilled in React and Next.js, she is passionate about building efficient and scalable web applications. Soniya is continuously exploring innovative solutions to deliver optimal user experiences."
+      "description": " Soniya Prasad is a software engineer and a recent graduate in Computer Science and Engineering with hands-on experience in end-to-end software development. Skilled in React and Next.js, she is passionate about building efficient and scalable web applications. Soniya is continuously exploring innovative solutions to deliver optimal user experiences."
     },
 
     "work": {
@@ -42,7 +42,7 @@
     "studies": {
       "title": "Studies",
       "institutions": {
-        "Mahatma Gandhi Central University": {
+        "MGCUB": {
           "description": "Studied computer science and engineering.",
           "timeframe": "Nov 2020 - Aug 2024",
           "cgpa": "cgpa: 8.5"

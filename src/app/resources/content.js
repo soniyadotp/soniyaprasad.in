@@ -8,7 +8,8 @@ const person = {
   },
   role: "Software Developer Engineer",
   avatar: "/images/avatar.jpg",
-  location: "Asia/Kolkata", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+
+  location: "India/Bengaluru", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
   languages: ["English", "Hindi"], // optional: Leave the array empty if you don't want to display languages
 };
 
@@ -56,9 +57,9 @@ const home = {
   headline: <>Software Engineer</>,
   subline: (
     <>
-      I'm Soniya, software engineer with a focus on creating high-performance
-      web applications from <InlineCode>India.</InlineCode>
-      <br /> After hours, I build my own projects.
+      I'm Soniya, a software engineer at{" "}
+      <InlineCode>Versa Networks</InlineCode>, where I develop and maintain
+      network security solutions. After hours, I build my own projects.
     </>
   ),
 };
@@ -83,7 +84,7 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        Soniya Prasad is a recent graduate in Computer Science and Engineering
+        Soniya Prasad is a software engineer and a recent graduate in Computer Science and Engineering
         with hands-on experience in end-to-end software development. Skilled in
         React and Next.js, she is passionate about building efficient and
         scalable web applications. Soniya is continuously exploring innovative
@@ -138,7 +139,7 @@ const about = {
     title: "Studies",
     institutions: [
       {
-        name: "Mahatma Gandhi Central University",
+        name: "MGCUB",
         description: <>Studied computer science and engineering.</>,
         timeframe: "Nov 2020 - Aug 2024",
         cgpa: "cgpa: 8.82",
