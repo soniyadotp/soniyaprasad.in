@@ -273,7 +273,7 @@ export default function About({
                     >
                       {experience.role}
                     </Text>
-                    <Flex as="ul" direction="column" gap="16">
+                    <Flex as="ul" direction="column" gap="8">
                       {experience.achievements.map(
                         (achievement: string, index: any) => (
                           <Text

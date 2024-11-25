@@ -57,9 +57,9 @@ const home = {
   headline: <>Software Engineer</>,
   subline: (
     <>
-      I'm Soniya, a software engineer at{" "}
-      <InlineCode>Versa Networks</InlineCode>, where I develop and maintain
-      network security solutions. After hours, I build my own projects.
+      I'm Soniya, a software engineer at <InlineCode>Versa Networks</InlineCode>
+      , where I develop and maintain network security solutions. After hours, I
+      build my own projects.
     </>
   ),
 };
@@ -84,11 +84,11 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        Soniya Prasad is a software engineer and a recent graduate in Computer Science and Engineering
-        with hands-on experience in end-to-end software development. Skilled in
-        React and Next.js, she is passionate about building efficient and
-        scalable web applications. Soniya is continuously exploring innovative
-        solutions to deliver optimal user experiences.
+        Soniya Prasad is a software engineer and a recent graduate in Computer
+        Science and Engineering with hands-on experience in end-to-end software
+        development. Skilled in React and Next.js, she is passionate about
+        building efficient and scalable web applications. Soniya is continuously
+        exploring innovative solutions to deliver optimal user experiences.
       </>
     ),
   },
@@ -96,6 +96,26 @@ const about = {
     display: true, // set to false to hide this section
     title: "Work Experience",
     experiences: [
+      {
+        company: "Versa Networks",
+        timeframe: "Nov 2024 - Present",
+        role: "Software Engineer 1",
+        achievements: [
+          <>
+            Taking ownership of end-to-end features, from frontend design to
+            backend implementation.
+          </>,
+          <>
+            Contributing to the overall architecture and design of the SASE
+            platform.
+          </>,
+          <>
+            Automating build, test, and deployment processes using tools like
+            Jenkins, CI/CD pipelines, and Ansible.
+          </>,
+        ],
+        images: [],
+      },
       {
         company: "Travander",
         timeframe: "June 2024 - Aug 2024",
@@ -139,7 +159,7 @@ const about = {
     title: "Studies",
     institutions: [
       {
-        name: "MGCUB",
+        name: "Mahatma Gandhi Central University",
         description: <>Studied computer science and engineering.</>,
         timeframe: "Nov 2020 - Aug 2024",
         cgpa: "cgpa: 8.82",
