@@ -59,7 +59,7 @@
           "description": "Redux toolkit, GraphQL, Git, Jest, MongoDB, SQL, Tailwind"
         },
         "Others": {
-          "description": "Core Java (Java 8/9, Multithreading), CI/CD, Cloud (AWS/Azure/GCP), Microservices (REST API, SOAP, Event & Message-Based), CI/CD, Cloud (AWS, Azure, GCP), Docker, Containerization, SOLID Principles, Caching (Redis), Monitoring (Grafana)"
+          "description": "Core Java (Java 8/9, Multithreading), CI/CD, Cloud (AWS/Azure/GCP), Microservices (REST API, SOAP, Event & Message-Based), Docker, Containerization, SOLID Principles, Caching (Redis), Monitoring (Grafana)"
         }
       }
     }

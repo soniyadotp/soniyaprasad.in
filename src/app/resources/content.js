@@ -146,8 +146,8 @@ const about = {
             increasing engagement by 40%.
           </>,
           <>
-            Collaborated with the team Contributed to develop Tublian’s 8020
-            roadmap generator, boosting performance by 10%.
+            Collaborated with the team to develop Tublian’s 8020 roadmap
+            generator, boosting performance by 10%.
           </>,
         ],
         images: [],
@@ -187,9 +187,9 @@ const about = {
         description: (
           <>
             Core Java (Java 8/9, Multithreading), CI/CD, Cloud (AWS/Azure/GCP),
-            Microservices (REST API, SOAP, Event & Message-Based), CI/CD, Cloud
-            (AWS, Azure, GCP), Docker, Containerization, SOLID Principles,
-            Caching (Redis), Monitoring (Grafana)
+            Microservices (REST API, SOAP, Event & Message-Based), Docker,
+            Containerization, SOLID Principles, Caching (Redis), Monitoring
+            (Grafana)
           </>
         ),
         images: [],
