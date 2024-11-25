@@ -31,7 +31,7 @@ export default function MasonryGrid() {
                     alt={image.alt}
                     className={styles.gridItem}
                 />
-            ))}
+            )).reverse()}
         </Masonry>
     );
 }
