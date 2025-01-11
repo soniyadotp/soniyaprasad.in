@@ -58,7 +58,7 @@ const home = {
   subline: (
     <>
       I'm Soniya, a software engineer at <InlineCode>Versa Networks</InlineCode>
-      , where I develop and maintain network security solutions. After hours, I
+      , where I develop and maintain network security solutions. After hours, I 
       build my own projects.
     </>
   ),
@@ -84,9 +84,9 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        Soniya Prasad is a software engineer and a recent graduate in Computer
-        Science and Engineering with hands-on experience in end-to-end software
-        development. Skilled in React and Next.js, she is passionate about
+        Soniya Prasad is a software engineer at Versa Networks and a recent graduate in Computer
+        Science and Engineering. With hands-on experience in end-to-end software
+        development, she loves problem-solving and is passionate about
         building efficient and scalable web applications. Soniya is continuously
         exploring innovative solutions to deliver optimal user experiences.
       </>
@@ -106,7 +106,7 @@ const about = {
             backend implementation.
           </>,
           <>
-            Contributing to the overall architecture and design of the SASE
+            Contributing to the overall architecture and design of the Maestro
             platform.
           </>,
           <>
