@@ -5,10 +5,11 @@ import classNames from 'classnames';
 
 import { Flex, Background } from '@/once-ui/components'
 import { Footer, Header, RouteGuard } from "@/components";
-import { baseURL, effects, style } from '@/app/resources'
+import { baseURL, effects, style } from '@/app/resources';
 
 import { Inter } from 'next/font/google'
 import { Source_Code_Pro } from 'next/font/google';
+import { GoogleAnalytics } from '@next/third-parties/google';
 
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations, unstable_setRequestLocale } from 'next-intl/server';
@@ -132,6 +133,7 @@ export default async function RootLayout({
 						</Flex>
 					</Flex>
 					<Footer/>
+					<GoogleAnalytics gaId="G-PMQV1PYWFD"/>
 				</Flex>
 			</Flex>
 		</NextIntlClientProvider>
