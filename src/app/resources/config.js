@@ -47,12 +47,13 @@ const display = {
 }
 
 const mailchimp = {
-    action: 'https://url/subscribe/post?parameters',
+    action: 'https://soniyaprasad.us14.list-manage.com/subscribe/post?u=6939e3cb221a9c7d163c0284f&amp;id=f6b6ab0a3e&amp;f_id=00168ae0f0', 
     effects: {
         gradient: true,
-        dots:     false,
-        lines:    true,
+        dots: false,
+        lines: true,
     }
-}
+};
+
 
 export { routes, protectedRoutes, effects, style, display, mailchimp, baseURL, i18n, i18nOptions };
