@@ -162,24 +162,26 @@ function InlineCode({ children, ...props }: { children: ReactNode }) {
     );
 }
 
-const components = {
-    p: createParagraph as any,
-    h1: createHeading(1) as any,
-    h2: createHeading(2) as any,
-    h3: createHeading(3) as any,
-    h4: createHeading(4) as any,
-    h5: createHeading(5) as any,
-    h6: createHeading(6) as any,
-    img: createImage as any,
-    a: CustomLink as any,
+const components: Record<string, React.ElementType> = {
+    p: createParagraph,
+    h1: createHeading(1),
+    h2: createHeading(2),
+    h3: createHeading(3),
+    h4: createHeading(4),
+    h5: createHeading(5),
+    h6: createHeading(6),
+    img: createImage,
+    a: CustomLink,
     Table,
     pre: CodeBlock,
     code: InlineCode,
 };
 
+
 type CustomMDXProps = MDXRemoteProps & {
-    components?: typeof components;
+    components?: Record<string, React.ElementType>;
 };
+
 
 export function CustomMDX(props: CustomMDXProps) {
     return (
