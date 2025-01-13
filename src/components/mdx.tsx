@@ -20,9 +20,9 @@ function Table({ data }: TableProps) {
     ));
     const rows = data.rows.map((row, index) => (
         <tr key={index}>
-        {row.map((cell, cellIndex) => (
-            <td key={cellIndex}>{cell}</td>
-        ))}
+            {row.map((cell, cellIndex) => (
+                <td key={cellIndex}>{cell}</td>
+            ))}
         </tr>
     ));
 
@@ -75,51 +75,92 @@ function createImage({ alt, src, ...props }: SmartImageProps & { src: string }) 
             aspectRatio="16 / 9"
             alt={alt}
             src={src}
-            {...props}/>
-        )
+            {...props}
+        />
+    );
 }
 
 function slugify(str: string): string {
     return str
         .toString()
         .toLowerCase()
-        .trim() // Remove whitespace from both ends of a string
-        .replace(/\s+/g, '-') // Replace spaces with -
-        .replace(/&/g, '-and-') // Replace & with 'and'
-        .replace(/[^\w\-]+/g, '') // Remove all non-word characters except for -
-        .replace(/\-\-+/g, '-') // Replace multiple - with single -
+        .trim()
+        .replace(/\s+/g, '-')
+        .replace(/&/g, '-and-')
+        .replace(/[^\w\-]+/g, '')
+        .replace(/\-\-+/g, '-');
 }
 
 function createHeading(level: 1 | 2 | 3 | 4 | 5 | 6) {
     const CustomHeading = ({ children, ...props }: TextProps) => {
-    const slug = slugify(children as string);
+        const slug = slugify(children as string);
         return (
             <HeadingLink
-                style={{marginTop: 'var(--static-space-24)', marginBottom: 'var(--static-space-12)'}}
+                style={{ marginTop: 'var(--static-space-24)', marginBottom: 'var(--static-space-12)' }}
                 level={level}
                 id={slug}
-                {...props}>
+                {...props}
+            >
                 {children}
             </HeadingLink>
         );
     };
-  
+
     CustomHeading.displayName = `Heading${level}`;
-  
+
     return CustomHeading;
 }
 
 function createParagraph({ children }: TextProps) {
     return (
-        <Text style={{lineHeight: '150%'}}
+        <Text
+            style={{ lineHeight: '150%' }}
             variant="body-default-m"
             onBackground="neutral-medium"
             marginTop="8"
-            marginBottom="12">
+            marginBottom="12"
+        >
             {children}
         </Text>
     );
-};
+}
+
+function CodeBlock({ children, ...props }: { children: ReactNode }) {
+    return (
+        <pre
+            style={{
+                maxWidth: '100%',
+                overflowX: 'auto',
+                whiteSpace: 'pre-wrap',
+                wordWrap: 'break-word',
+                backgroundColor: '#f5f5f5',
+                padding: '1rem',
+                borderRadius: '4px',
+                boxSizing: 'border-box',
+            }}
+            {...props}
+        >
+            {children}
+        </pre>
+    );
+}
+
+function InlineCode({ children, ...props }: { children: ReactNode }) {
+    return (
+        <code
+            style={{
+                backgroundColor: '#f5f5f5',
+                padding: '0.2rem 0.4rem',
+                borderRadius: '4px',
+                fontSize: '90%',
+                wordWrap: 'break-word',
+            }}
+            {...props}
+        >
+            {children}
+        </code>
+    );
+}
 
 const components = {
     p: createParagraph as any,
@@ -132,6 +173,8 @@ const components = {
     img: createImage as any,
     a: CustomLink as any,
     Table,
+    pre: CodeBlock,
+    code: InlineCode,
 };
 
 type CustomMDXProps = MDXRemoteProps & {
