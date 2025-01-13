@@ -33,7 +33,7 @@ export const Footer = () => {
             / Find my projects at{" "}
             <SmartLink
               style={{ marginLeft: "-0.125rem" }}
-              href="https://github.com/soniyaprasad"
+              href="https://github.com/soniyaprasad77"
             >
               Github
             </SmartLink>
