@@ -1,4 +1,5 @@
 import { InlineCode } from "@/once-ui/components";
+import Link from "next/link";
 
 const person = {
   firstName: "Soniya",
@@ -57,7 +58,9 @@ const home = {
   headline: <>Software Engineer</>,
   subline: (
     <>
-      I'm Soniya, a software engineer at <InlineCode>Versa Networks</InlineCode>
+      I'm Soniya, a software engineer at <InlineCode>
+        <Link href="https://www.versa-networks.com" target="_blank" rel="noopener noreferrer">Versa Networks</Link>
+      </InlineCode>
       , where I develop and maintain network security solutions. After hours, I 
       build my own projects.
     </>
