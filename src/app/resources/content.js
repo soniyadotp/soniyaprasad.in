@@ -223,46 +223,46 @@ const gallery = {
   description: `A photo collection by ${person.name}`,
   // Images from https://pexels.com
   images: [
-    {
-      src: "/images/gallery/img-01.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
+    // {
+    //   src: "/images/gallery/img-01.jpg",
+    //   alt: "image",
+    //   orientation: "vertical",
+    // },
     {
       src: "/images/gallery/img-02.jpg",
       alt: "image",
       orientation: "horizontal",
     },
-    {
-      src: "/images/gallery/img-03.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
+    // {
+    //   src: "/images/gallery/img-03.jpg",
+    //   alt: "image",
+    //   orientation: "vertical",
+    // },
     {
       src: "/images/gallery/img-04.jpg",
       alt: "image",
       orientation: "horizontal",
     },
-    {
-      src: "/images/gallery/img-05.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-06.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/img-07.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-08.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
+    // {
+    //   src: "/images/gallery/img-05.jpg",
+    //   alt: "image",
+    //   orientation: "horizontal",
+    // },
+    // {
+    //   src: "/images/gallery/img-06.jpg",
+    //   alt: "image",
+    //   orientation: "vertical",
+    // },
+    // {
+    //   src: "/images/gallery/img-07.jpg",
+    //   alt: "image",
+    //   orientation: "horizontal",
+    // },
+    // {
+    //   src: "/images/gallery/img-08.jpg",
+    //   alt: "image",
+    //   orientation: "vertical",
+    // },
     {
       src: "/images/gallery/img-09.jpg",
       alt: "image",
@@ -298,11 +298,11 @@ const gallery = {
       alt: "image",
       orientation: "vertical",
     },
-    {
-      src: "/images/gallery/img-16.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
+    // {
+    //   src: "/images/gallery/img-16.jpg",
+    //   alt: "image",
+    //   orientation: "vertical",
+    // },
     {
       src: "/images/gallery/img-17.jpg",
       alt: "image",
@@ -313,31 +313,52 @@ const gallery = {
       alt: "image",
       orientation: "horizontal",
     },
+    // {
+    //   src: "/images/gallery/img-19.jpg",
+    //   alt: "image",
+    //   orientation: "vertical",
+    // },
+    // {
+    //   src: "/images/gallery/img-20.jpg",
+    //   alt: "image",
+    //   orientation: "vertical",
+    // },
+    // {
+    //   src: "/images/gallery/img-21.jpg",
+    //   alt: "image",
+    //   orientation: "vertical",
+    // },
+    // {
+    //   src: "/images/gallery/img-22.jpg",
+    //   alt: "image",
+    //   orientation: "vertical",
+    // },
+    // {
+    //   src: "/images/gallery/img-23.jpg",
+    //   alt: "image",
+    //   orientation: "horizontal",
+    // },
     {
-      src: "/images/gallery/img-19.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/img-20.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/img-21.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/img-22.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/img-23.jpg",
+      src: "/images/gallery/img-24.jpg",
       alt: "image",
       orientation: "horizontal",
     },
+    // {
+    //   src: "/images/gallery/img-25.jpg",
+    //   alt: "image",
+    //   orientation: "vertical",
+    // },
+    {
+      src: "/images/gallery/img-26.jpg",
+      alt: "image",
+      orientation: "horizontal",
+    },
+    // {
+    //   src: "/images/gallery/img-27.jpg",
+    //   alt: "image",
+    //   orientation: "vertical",
+    // }
+ 
   ],
 };
 
