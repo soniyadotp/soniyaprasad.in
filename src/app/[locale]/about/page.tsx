@@ -339,7 +339,7 @@ export default function About({
                       alignItems="flex-end"
                       marginBottom="4"
                     >
-                      <Text variant="heading-strong-l">{institution.name}</Text>
+                      <Text  id={institution.name} variant="heading-strong-l">{institution.name}</Text>
                       <Text
                         variant="heading-default-xs"
                         onBackground="neutral-weak"
@@ -391,7 +391,9 @@ export default function About({
                     gap="4"
                     direction="column"
                   >
-                    <Text variant="heading-strong-l">{skill.title}</Text>
+                    <Text 
+                    id={skill.title}
+                    variant="heading-strong-l">{skill.title}</Text>
                     <Text variant="body-default-m" onBackground="neutral-weak">
                       {skill.description}
                     </Text>
