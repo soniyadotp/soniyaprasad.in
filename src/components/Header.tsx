@@ -76,11 +76,10 @@ export const Header = () => {
             as="header"
             zIndex={9}
             fillWidth padding="8"
-            justifyContent="space-between"
-            >
+            justifyContent="center">
             <Flex
                 hide="s"
-                paddingLeft="12" 
+                paddingLeft="12" fillWidth
                 alignItems="center"
                 textVariant="body-default-s">
                 { display.location && (
