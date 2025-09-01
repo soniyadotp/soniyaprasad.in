@@ -58,10 +58,17 @@ const home = {
   headline: <>Software Engineer</>,
   subline: (
     <>
-      I'm Soniya, a software engineer at <InlineCode>
-        <Link href="https://www.versa-networks.com" target="_blank" rel="noopener noreferrer">Versa Networks</Link>
+      I'm Soniya, a software engineer at{" "}
+      <InlineCode>
+        <Link
+          href="https://www.versa-networks.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Versa Networks
+        </Link>
       </InlineCode>
-      , where I develop and maintain network security solutions. After hours, I 
+      , where I develop and maintain network security solutions. After hours, I
       build my own projects.
     </>
   ),
@@ -87,11 +94,10 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        Soniya Prasad is a software engineer at Versa Networks and a recent graduate in Computer
-        Science and Engineering. With hands-on experience in end-to-end software
-        development, she loves problem-solving and is passionate about
-        building efficient and scalable web applications. Soniya is continuously
-        exploring innovative solutions to deliver optimal user experiences.
+        Soniya Prasad is a software engineer at Versa Networks with a passion
+        for building scalable web applications and a growing interest in machine
+        learning.She enjoys solving complex problems and exploring innovative
+        solutions to enhance user experiences.
       </>
     ),
   },
@@ -145,8 +151,8 @@ const about = {
       {
         name: "Mahatma Gandhi Central University",
         description: <>Studied computer science and engineering.</>,
-        timeframe: "Nov 2020 - Aug 2024",
-        cgpa: "cgpa: 8.82",
+        timeframe: "2020-2024",
+        cgpa: "8.82",
       },
     ],
   },
@@ -156,13 +162,17 @@ const about = {
     skills: [
       {
         title: "Primary",
-        description: <>HTML, CSS, JavaScript, React, Next.js, Node.js</>,
+        description: (
+          <>Java, JavaScript, React, Node.js, Go Programming Language</>
+        ),
         images: [],
       },
       {
         title: "Secondary",
         description: (
-          <>Redux toolkit, GraphQL, Git, Jest, MongoDB, SQL, Tailwind</>
+          <>
+            Redux toolkit, GraphQL, Git, Jest, MongoDB, SQL, Tailwind, Bootstrap
+          </>
         ),
         images: [],
       },
@@ -170,10 +180,9 @@ const about = {
         title: "Other",
         description: (
           <>
-            Core Java (Java 8/9, Multithreading), CI/CD, Cloud (AWS/Azure/GCP),
-            Microservices (REST API, SOAP, Event & Message-Based), Docker,
-            Containerization, SOLID Principles, Caching (Redis), Monitoring
-            (Grafana)
+            C, Python, Database Management Systems (DBMS), Networking, Operating
+            Systems, Machine Learning, Compiler Design, Software Engineering,
+            Data Structures & Algorithms (DSA), Design & Analysis of Algorithms
           </>
         ),
         images: [],
@@ -204,7 +213,7 @@ const gallery = {
   description: `A photo collection by ${person.name}`,
   // Images from https://pexels.com
   images: [
-     {
+    {
       src: "/images/gallery/img-27.jpg",
       alt: "image",
       orientation: "horizontal",
@@ -228,7 +237,7 @@ const gallery = {
     //   alt: "image",
     //   orientation: "horizontal",
     // },
- 
+
     {
       src: "/images/gallery/img-01.jpg",
       alt: "image",
@@ -319,7 +328,7 @@ const gallery = {
       alt: "image",
       orientation: "horizontal",
     },
-   
+
     // {
     //   src: "/images/gallery/img-23.jpg",
     //   alt: "image",
@@ -340,7 +349,6 @@ const gallery = {
       alt: "image",
       orientation: "horizontal",
     },
-   
   ],
 };
 
