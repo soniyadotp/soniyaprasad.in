@@ -80,22 +80,7 @@ const createI18nContent = (t) => {
       display: true, // set to false to hide this section
       title: t("about.work.title"),
       experiences: [
-        {
-          company: "Travander",
-          timeframe: t("about.work.experiences.Travander.timeframe"),
-          role: t("about.work.experiences.Travander.role"),
-          achievements: t(
-            "about.work.experiences.Travander.achievements"
-          ).split(";"),
-          images: [
-            {
-              src: "/images/projects/project-01/cover-01.jpg",
-              alt: "Once UI Project",
-              width: 16,
-              height: 9,
-            },
-          ],
-        },
+       
         {
           company: "Tublian",
           timeframe: t("about.work.experiences.Tublian.timeframe"),

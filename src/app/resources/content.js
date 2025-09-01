@@ -120,27 +120,8 @@ const about = {
         images: [],
       },
       {
-        company: "Travander",
-        timeframe: "June 2024 - Aug 2024",
-        role: "Frontend Engineer",
-        achievements: [
-          <>
-            Managed state for the traveler module with the Context API,
-            overseeing data flows across 40+ components and integrating REST
-            APIs for efficient data handling.
-          </>,
-          <>
-            Implemented form validation with React Hook Form & Zod, optimized
-            infinite scroll for trips and bookings (improving load times by
-            25%), and integrated secure payment processing with Razorpay for
-            100+ daily transactions.
-          </>,
-        ],
-        images: [],
-      },
-      {
         company: "Tublian",
-        timeframe: "March 2024 - May 2024",
+        timeframe: "March 2024 - Aug 2024",
         role: "Software Engineer Intern",
         achievements: [
           <>
