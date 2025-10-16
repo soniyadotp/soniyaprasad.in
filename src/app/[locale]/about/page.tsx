@@ -126,6 +126,12 @@ export default function About({
             flex={3}
             direction="column"
             alignItems="center"
+            style={{
+              position: "sticky",
+              top: "calc(var(--static-space-8) * 2)", 
+              alignSelf: "flex-start",
+              zIndex: 1, // ensures avatar stays above background layers
+            }}
           >
             <Avatar src={person.avatar} size="xl" />
             <Flex gap="8" alignItems="center">
@@ -288,24 +294,34 @@ export default function About({
                     </Flex>
                     {experience.images.length > 0 && (
                       <Flex fillWidth paddingTop="m" paddingLeft="40" wrap>
-                        {experience.images.map((image: { width: number; height: number; alt: string; src: string }, index) => (
-                          <Flex
-                            key={index}
-                            border="neutral-medium"
-                            borderStyle="solid-1"
-                            radius="m"
-                            minWidth={image.width}
-                            height={image.height}
-                          >
-                            <SmartImage
-                              enlarge
+                        {experience.images.map(
+                          (
+                            image: {
+                              width: number;
+                              height: number;
+                              alt: string;
+                              src: string;
+                            },
+                            index
+                          ) => (
+                            <Flex
+                              key={index}
+                              border="neutral-medium"
+                              borderStyle="solid-1"
                               radius="m"
-                              sizes={image.width.toString()}
-                              alt={image.alt}
-                              src={image.src}
-                            />
-                          </Flex>
-                        ))}
+                              minWidth={image.width}
+                              height={image.height}
+                            >
+                              <SmartImage
+                                enlarge
+                                radius="m"
+                                sizes={image.width.toString()}
+                                alt={image.alt}
+                                src={image.src}
+                              />
+                            </Flex>
+                          )
+                        )}
                       </Flex>
                     )}
                   </Flex>
@@ -339,7 +355,9 @@ export default function About({
                       alignItems="flex-end"
                       marginBottom="4"
                     >
-                      <Text  id={institution.name} variant="heading-strong-l">{institution.name}</Text>
+                      <Text id={institution.name} variant="heading-strong-l">
+                        {institution.name}
+                      </Text>
                       <Text
                         variant="heading-default-xs"
                         onBackground="neutral-weak"
@@ -391,32 +409,42 @@ export default function About({
                     gap="4"
                     direction="column"
                   >
-                    <Text 
-                    id={skill.title}
-                    variant="heading-strong-l">{skill.title}</Text>
+                    <Text id={skill.title} variant="heading-strong-l">
+                      {skill.title}
+                    </Text>
                     <Text variant="body-default-m" onBackground="neutral-weak">
                       {skill.description}
                     </Text>
                     {skill.images.length > 0 && (
                       <Flex fillWidth paddingTop="m" gap="12" wrap>
-                        {skill.images.map((image: { width: number; height: number; alt: string; src: string }, index) => (
-                          <Flex
-                            key={index}
-                            border="neutral-medium"
-                            borderStyle="solid-1"
-                            radius="m"
-                            minWidth={image.width}
-                            height={image.height}
-                          >
-                            <SmartImage
-                              enlarge
+                        {skill.images.map(
+                          (
+                            image: {
+                              width: number;
+                              height: number;
+                              alt: string;
+                              src: string;
+                            },
+                            index
+                          ) => (
+                            <Flex
+                              key={index}
+                              border="neutral-medium"
+                              borderStyle="solid-1"
                               radius="m"
-                              sizes={image.width.toString()}
-                              alt={image.alt}
-                              src={image.src}
-                            />
-                          </Flex>
-                        ))}
+                              minWidth={image.width}
+                              height={image.height}
+                            >
+                              <SmartImage
+                                enlarge
+                                radius="m"
+                                sizes={image.width.toString()}
+                                alt={image.alt}
+                                src={image.src}
+                              />
+                            </Flex>
+                          )
+                        )}
                       </Flex>
                     )}
                   </Flex>
