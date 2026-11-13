@@ -12,14 +12,14 @@ import {
 import { baseURL, renderContent } from "@/app/resources";
 import TableOfContents from "@/components/about/TableOfContents";
 import styles from "@/components/about/about.module.scss";
-import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
-import { useTranslations } from "next-intl";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 
 export async function generateMetadata({
-  params: { locale },
+  params,
 }: {
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 }) {
+  const { locale } = await params;
   const t = await getTranslations();
   const { person, about, social } = renderContent(t);
   const title = about.title;
@@ -50,13 +50,14 @@ export async function generateMetadata({
   };
 }
 
-export default function About({
-  params: { locale },
+export default async function About({
+  params,
 }: {
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 }) {
-  unstable_setRequestLocale(locale);
-  const t = useTranslations();
+  const { locale } = await params;
+  setRequestLocale(locale);
+  const t = await getTranslations();
   const { person, about, social } = renderContent(t);
   const structure = [
     {
@@ -119,6 +120,7 @@ export default function About({
       <Flex fillWidth mobileDirection="column" justifyContent="center">
         {about.avatar.display && (
           <Flex
+            className={styles.avatar}
             minWidth="160"
             paddingX="l"
             paddingBottom="xl"
@@ -126,12 +128,6 @@ export default function About({
             flex={3}
             direction="column"
             alignItems="center"
-            style={{
-              position: "sticky",
-              top: "calc(var(--static-space-8) * 2)", 
-              alignSelf: "flex-start",
-              zIndex: 1, // ensures avatar stays above background layers
-            }}
           >
             <Avatar src={person.avatar} size="xl" />
             <Flex gap="8" alignItems="center">

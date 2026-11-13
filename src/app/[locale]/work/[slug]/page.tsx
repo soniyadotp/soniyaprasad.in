@@ -4,14 +4,13 @@ import { formatDate, getPosts } from '@/app/utils'
 import { AvatarGroup, Button, Flex, Heading, SmartImage, Text } from '@/once-ui/components'
 import { baseURL, renderContent } from '@/app/resources';
 import { routing } from '@/i18n/routing';
-import { unstable_setRequestLocale } from 'next-intl/server';
-import { useTranslations } from 'next-intl';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 
 interface WorkParams {
-    params: {
+    params: Promise<{
         slug: string;
 		locale: string;
-    };
+    }>;
 }
 
 export async function generateStaticParams() {
@@ -32,7 +31,8 @@ export async function generateStaticParams() {
     return allPosts;
 }
 
-export function generateMetadata({ params: { slug, locale } }: WorkParams) {
+export async function generateMetadata({ params }: WorkParams) {
+	const { slug, locale } = await params;
 	let post = getPosts(['src', 'app', '[locale]', 'work', 'projects', locale]).find((post) => post.slug === slug)
 	
 	if (!post) {
@@ -77,15 +77,16 @@ export function generateMetadata({ params: { slug, locale } }: WorkParams) {
 	}
 }
 
-export default function Project({ params }: WorkParams) {
-	unstable_setRequestLocale(params.locale);
-	let post = getPosts(['src', 'app', '[locale]', 'work', 'projects', params.locale]).find((post) => post.slug === params.slug)
+export default async function Project({ params }: WorkParams) {
+	const { slug, locale } = await params;
+	setRequestLocale(locale);
+	let post = getPosts(['src', 'app', '[locale]', 'work', 'projects', locale]).find((post) => post.slug === slug)
 
 	if (!post) {
 		notFound()
 	}
 
-	const t = useTranslations();
+	const t = await getTranslations();
 	const { person } = renderContent(t);
 
 	const avatars = post.metadata.team?.map((person) => ({
@@ -111,7 +112,7 @@ export default function Project({ params }: WorkParams) {
 						image: post.metadata.image
 							? `https://${baseURL}${post.metadata.image}`
 							: `https://${baseURL}/og?title=${post.metadata.title}`,
-							url: `https://${baseURL}/${params.locale}/work/${post.slug}`,
+							url: `https://${baseURL}/${locale}/work/${post.slug}`,
 						author: {
 							'@type': 'Person',
 							name: person.name,
@@ -123,7 +124,7 @@ export default function Project({ params }: WorkParams) {
 				fillWidth maxWidth="xs" gap="16"
 				direction="column">
 				<Button
-					href={`/${params.locale}/work`}
+					href={`/${locale}/work`}
 					variant="tertiary"
 					size="s"
 					prefixIcon="chevronLeft">

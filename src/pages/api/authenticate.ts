@@ -1,5 +1,5 @@
 import { NextApiRequest, NextApiResponse } from 'next';
-import cookie from 'cookie';
+import { stringifySetCookie } from 'cookie';
 
 export default function handler(req: NextApiRequest, res: NextApiResponse) {
     if (req.method === 'POST') {
@@ -9,7 +9,9 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
         if (password === correctPassword) {
             res.setHeader(
                 'Set-Cookie',
-                cookie.serialize('authToken', 'authenticated', {
+                stringifySetCookie({
+                    name: 'authToken',
+                    value: 'authenticated',
                     httpOnly: true,
                     secure: process.env.NODE_ENV === 'production',
                     maxAge: 60 * 60,

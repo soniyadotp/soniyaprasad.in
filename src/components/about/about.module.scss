@@ -6,7 +6,19 @@
     }
 }
 
+.avatar {
+    position: sticky;
+    top: calc(var(--static-space-8) * 2);
+    align-self: flex-start;
+    z-index: 1;
+}
+
 @media (--s) {
+    .avatar {
+        position: static;
+        align-self: center;
+    }
+
     .textAlign {
         text-align: center;
     }
